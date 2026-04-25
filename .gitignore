@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Data (do not commit)
+data/images/
+data/masks/
+data/captions.csv
+data/*.zip
+data/raw/
+data/processed/
+
+# Models / checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Logs / runs
+wandb/
+runs/
+logs/
+*.log
+
+# Outputs
+outputs/
+predictions/
+
+# OS
+Thumbs.db
+.DS_Store
