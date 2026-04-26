@@ -1,7 +1,7 @@
 # Multimodal Fusion for Remote Sensing Land Cover Segmentation
 
-DI725 Term Project — Selin Uluçay (2218147)
-Middle East Technical University, Data Informatics
+DI725 Term Project. Selin Uluçay (2218147).
+Middle East Technical University, Data Informatics.
 
 ## Overview
 
@@ -9,7 +9,7 @@ This project investigates whether incorporating textual descriptions into a remo
 
 ## Research Questions
 
-The study is structured around one main research question and two ablation sub-questions:
+The study is structured around one main research question and two ablation sub-questions.
 
 **Main RQ.** Does incorporating textual descriptions into a remote sensing segmentation model improve performance compared to a vision-only baseline?
 
@@ -19,54 +19,35 @@ The study is structured around one main research question and two ablation sub-q
 
 ## Repository Structure
 
-\`\`\`
+```
 multimodal-rs-segmentation/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── configs/                  # YAML experiment configs
-├── data/                     # gitignored; expected layout below
 ├── notebooks/
-├── src/
-│   ├── data/                 # dataset, transforms, augmentation
-│   ├── models/               # UNetFormer, SegFormer, multimodal wrappers
-│   ├── losses/               # weighted CE, KL-divergence aux loss
-│   ├── train.py
-│   ├── evaluate.py
-│   └── utils.py
-└── reports/
-\`\`\`
-
-## Setup
-
-\`\`\`bash
-git clone https://github.com/<username>/multimodal-rs-segmentation.git
-cd multimodal-rs-segmentation
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-\`\`\`
+│   └── 01_data_exploration.ipynb
+└── data/                     (gitignored, expected layout below)
+```
 
 ## Data
 
-The dataset is not committed. Place it under \`data/\` with this layout:
+The dataset is not committed. Place it under `data/` with this layout.
 
-\`\`\`
+```
 data/
 ├── images/
 ├── masks/
 └── captions.csv
-\`\`\`
+```
 
 ## Reproducibility
 
-- Fixed seeds across data splitting, model initialization, and dataloaders
-- All hyperparameters in YAML configs (no magic numbers in code)
-- Experiments tracked on Weights & Biases
-- Train/val/test split is deterministic (stratified by dominant class)
+Fixed seeds across data splitting and any random sampling. Train/val/test split is deterministic (stratified by dominant class). Experiments tracked on Weights & Biases (project `multimodal-rs-segmentation`).
 
 ## Phase Status
 
-- **Phase 1 (Literature, Proposal, PoC)** — submitted
-- **Phase 2 (Benchmarking, Ablations)** — in progress
-- **Phase 3 (Final results, report)** — upcoming
+**Phase 1 (Literature, Proposal, PoC).** Submitted separately on ODTUClass, not included in this repo.
+
+**Phase 2 (Benchmarking, Ablations).** In progress.
+
+**Phase 3 (Final results, report).** Upcoming.
