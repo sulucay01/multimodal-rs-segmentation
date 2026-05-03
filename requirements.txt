@@ -1,31 +1,27 @@
-# Core
-numpy>=1.24,<2.0
+# DI725 Term Project - Multimodal Fusion for Remote Sensing Land Cover Segmentation
+# Tested on Google Colab (Python 3.10+, CUDA 12.x)
+ 
+# Core scientific computing
+numpy>=1.24
 pandas>=2.0
-pillow>=10.0
 matplotlib>=3.7
-seaborn>=0.12
-scikit-learn>=1.3
-tqdm>=4.65
-
+Pillow>=10.0
+ 
 # Deep learning
-torch>=2.1
-torchvision>=0.16
-timm>=0.9.12
-
-# Segmentation models
-segmentation-models-pytorch>=0.3.3
-
-# Vision-language
-open-clip-torch>=2.24
-transformers>=4.40
-
-# Augmentation
-albumentations>=1.3.1
-
-# Experiment tracking & config
+torch>=2.0
+torchvision>=0.15
+ 
+# Model architectures
+transformers>=4.36
+timm>=0.9
+einops>=0.7
+open_clip_torch>=2.20
+ 
+# Training utilities
+scikit-learn>=1.3
 wandb>=0.16
-pyyaml>=6.0
-
-# Dev / notebooks
+tqdm>=4.65
+ 
+# Notebook environment (only needed if running locally, Colab has these preinstalled)
 jupyter>=1.0
-ipykernel>=6.25
+ipykernel>=6.0
