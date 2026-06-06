@@ -1,27 +1,30 @@
 # DI725 Term Project - Multimodal Fusion for Remote Sensing Land Cover Segmentation
 # Tested on Google Colab (Python 3.10+, CUDA 12.x)
- 
+# torch/torchvision were run as the +cu128 CUDA builds; the base pins below
+# resolve to the correct CUDA wheels on Colab/Linux.
+
 # Core scientific computing
-numpy>=1.24
-pandas>=2.0
-matplotlib>=3.7
-Pillow>=10.0
- 
+numpy==2.0.2
+pandas==2.2.2
+matplotlib==3.10.0
+Pillow==11.3.0
+
 # Deep learning
-torch>=2.0
-torchvision>=0.15
- 
-# Model architectures
-transformers>=4.36
-timm>=0.9
-einops>=0.7
-open_clip_torch>=2.20
- 
+torch==2.11.0
+torchvision==0.26.0
+
+# Model architectures and weights
+transformers==5.9.0
+timm==1.0.27
+einops==0.8.2
+open_clip_torch==3.3.0
+huggingface_hub==1.17.0
+
 # Training utilities
-scikit-learn>=1.3
-wandb>=0.16
-tqdm>=4.65
- 
+scikit-learn==1.6.1
+wandb==0.27.0
+tqdm==4.67.3
+
 # Notebook environment (only needed if running locally, Colab has these preinstalled)
 jupyter>=1.0
 ipykernel>=6.0
