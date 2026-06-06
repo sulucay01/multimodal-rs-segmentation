@@ -1,6 +1,6 @@
 # DI725 Term Project: Multimodal Fusion for Remote Sensing Land Cover Segmentation
 
-Course project for METU DI725. This project investigates whether textual descriptions can improve semantic segmentation accuracy on aerial land-cover imagery.
+Course project for METU DI725. This project investigates whether textual descriptions can improve semantic segmentation performance on aerial land-cover imagery.
 
 ## Overview
 
